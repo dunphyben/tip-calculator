@@ -40,5 +40,6 @@
 }
 
 - (IBAction)onTap:(UITapGestureRecognizer *)sender {
+    [self.view endEditing:YES];
 }
 @end
