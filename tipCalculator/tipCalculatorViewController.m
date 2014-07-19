@@ -8,7 +8,11 @@
 
 #import "tipCalculatorViewController.h"
 
-@interface tipCalculatorViewController ()
+@interface tipCalculatorViewController () // put methods here, such as [self calculate] added below in IBAction
+// declare your created methods here in the interface! Makes it a private method because it's in the .m file
+// public methods are added to .h files
+
+-(void) calculate; // void means that you're not returning anything
 
 @end
 
@@ -41,5 +45,10 @@
 
 - (IBAction)onTap:(UITapGestureRecognizer *)sender {
     [self.view endEditing:YES];
+    [self calculate];
+}
+
+- (void) calculate {
+    NSLog(@"calculate method is called");
 }
 @end
