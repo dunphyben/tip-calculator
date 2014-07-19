@@ -52,8 +52,11 @@
     
     float billAmount = [self.billAmount.text floatValue];
     float tipAmount = billAmount * 0.15;
+    float total = billAmount + tipAmount;
     
-    self.tipAmount.text = [NSString stringWithFormat:@"%f", tipAmount];
+    self.tipAmount.text = [NSString stringWithFormat:@"%0.2f", tipAmount]; // 0.2f means 2 decimal place float
+    
+    self.total.text = [NSString stringWithFormat:@"%0.2f", total];
     
     //NSLog(@"%0.2f", billAmount); // f = float; d = integer
 }

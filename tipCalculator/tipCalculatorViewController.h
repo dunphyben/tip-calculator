@@ -14,5 +14,6 @@
 - (IBAction)onTap:(UITapGestureRecognizer *)sender;
 @property (weak, nonatomic) IBOutlet UITextField *billAmount;
 @property (weak, nonatomic) IBOutlet UILabel *tipAmount;
+@property (weak, nonatomic) IBOutlet UILabel *total;
 
 @end
