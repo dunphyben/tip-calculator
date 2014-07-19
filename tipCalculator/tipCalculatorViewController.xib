@@ -51,6 +51,10 @@
                 <outletCollection property="gestureRecognizers" destination="O6x-ss-ENl" appends="YES" id="RxP-co-qnG"/>
             </connections>
         </view>
-        <tapGestureRecognizer id="O6x-ss-ENl"/>
+        <tapGestureRecognizer id="O6x-ss-ENl">
+            <connections>
+                <action selector="onTap:" destination="-1" id="bKa-XI-6Uv"/>
+            </connections>
+        </tapGestureRecognizer>
     </objects>
 </document>
