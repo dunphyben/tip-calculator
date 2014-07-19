@@ -59,7 +59,7 @@
                     <nil key="highlightedColor"/>
                 </label>
                 <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="m1M-0A-feq">
-                    <rect key="frame" x="10" y="280" width="297" height="5"/>
+                    <rect key="frame" x="33" y="280" width="255" height="5"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <color key="backgroundColor" red="0.19191270890000001" green="0.22839978720000001" blue="0.47450980390000003" alpha="1" colorSpace="calibratedRGB"/>
                 </view>

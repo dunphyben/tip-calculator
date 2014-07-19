@@ -35,6 +35,9 @@
     
     self.title = @"Tip Calculator";
     self.tipArray = @[@(0.1), @(0.15), @(0.2)];
+    
+    [self.tipControl addTarget:self action:@selector(calculate) forControlEvents:UIControlEventValueChanged];
+    self.tipControl.selectedSegmentIndex = 1; // on load, the middle one (#1 in the array) is selected
                       
                       NSLog(@"tipArray");
     
