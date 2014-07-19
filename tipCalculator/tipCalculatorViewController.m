@@ -52,7 +52,7 @@
     
     float billAmount = [self.billAmount.text floatValue];
     
-    NSLog(@"%f", billAmount); // f = float; d = integer
+    NSLog(@"%0.2f", billAmount); // f = float; d = integer
 }
 
 @end
