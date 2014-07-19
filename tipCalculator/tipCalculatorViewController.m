@@ -34,7 +34,7 @@
     // Do any additional setup after loading the view from its nib.
     
     self.title = @"Tip Calculator";
-    self.tipArray = @[@(0.1), @(0.15), @(0.2);
+    self.tipArray = @[@(0.1), @(0.15), @(0.2)];
                       
                       NSLog(@"tipArray");
     
@@ -55,12 +55,17 @@
 - (void) calculate {
     
     float billAmount = [self.billAmount.text floatValue];
-    float tipAmount = billAmount * 0.15;
+    
+    float tipPercent = [self.tipArray[self.tipControl.selectedSegmentIndex] floatValue];
+    
+    float tipAmount = billAmount * tipPercent;
+    
     float total = billAmount + tipAmount;
     
     self.tipAmount.text = [NSString stringWithFormat:@"%0.2f", tipAmount]; // 0.2f means 2 decimal place float
-    
     self.total.text = [NSString stringWithFormat:@"%0.2f", total];
+    
+    NSLog(@"%d", self.tipControl.selectedSegmentIndex);
     
     //NSLog(@"%0.2f", billAmount); // f = float; d = integer
 }
