@@ -13,6 +13,7 @@
 // public methods are added to .h files
 
 -(void) calculate; // void means that you're not returning anything
+@property (nonatomic, strong) NSArray *tipArray;
 
 @end
 
@@ -33,6 +34,9 @@
     // Do any additional setup after loading the view from its nib.
     
     self.title = @"Tip Calculator";
+    self.tipArray = @[@(0.1), @(0.15), @(0.2);
+                      
+                      NSLog(@"tipArray");
     
     NSLog(@"Hello");
 }
