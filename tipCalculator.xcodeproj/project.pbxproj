@@ -19,6 +19,8 @@
 		B593E17A197AE17C009D4BDD /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B593E162197AE17C009D4BDD /* UIKit.framework */; };
 		B593E182197AE17C009D4BDD /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B593E180197AE17C009D4BDD /* InfoPlist.strings */; };
 		B593E184197AE17C009D4BDD /* tipCalculatorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B593E183197AE17C009D4BDD /* tipCalculatorTests.m */; };
+		B593E190197AE2CC009D4BDD /* tipCalculatorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B593E18E197AE2CC009D4BDD /* tipCalculatorViewController.m */; };
+		B593E191197AE2CC009D4BDD /* tipCalculatorViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B593E18F197AE2CC009D4BDD /* tipCalculatorViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +50,9 @@
 		B593E17F197AE17C009D4BDD /* tipCalculatorTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "tipCalculatorTests-Info.plist"; sourceTree = "<group>"; };
 		B593E181197AE17C009D4BDD /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		B593E183197AE17C009D4BDD /* tipCalculatorTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = tipCalculatorTests.m; sourceTree = "<group>"; };
+		B593E18D197AE2CC009D4BDD /* tipCalculatorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tipCalculatorViewController.h; sourceTree = "<group>"; };
+		B593E18E197AE2CC009D4BDD /* tipCalculatorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = tipCalculatorViewController.m; sourceTree = "<group>"; };
+		B593E18F197AE2CC009D4BDD /* tipCalculatorViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = tipCalculatorViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +112,9 @@
 		B593E164197AE17C009D4BDD /* tipCalculator */ = {
 			isa = PBXGroup;
 			children = (
+				B593E18D197AE2CC009D4BDD /* tipCalculatorViewController.h */,
+				B593E18E197AE2CC009D4BDD /* tipCalculatorViewController.m */,
+				B593E18F197AE2CC009D4BDD /* tipCalculatorViewController.xib */,
 				B593E16D197AE17C009D4BDD /* AppDelegate.h */,
 				B593E16E197AE17C009D4BDD /* AppDelegate.m */,
 				B593E170197AE17C009D4BDD /* Images.xcassets */,
@@ -221,6 +229,7 @@
 			files = (
 				B593E169197AE17C009D4BDD /* InfoPlist.strings in Resources */,
 				B593E171197AE17C009D4BDD /* Images.xcassets in Resources */,
+				B593E191197AE2CC009D4BDD /* tipCalculatorViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -239,6 +248,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B593E190197AE2CC009D4BDD /* tipCalculatorViewController.m in Sources */,
 				B593E16F197AE17C009D4BDD /* AppDelegate.m in Sources */,
 				B593E16B197AE17C009D4BDD /* main.m in Sources */,
 			);
