@@ -38,7 +38,7 @@
     
     [self.tipControl addTarget:self action:@selector(calculate) forControlEvents:UIControlEventValueChanged];
     self.tipControl.selectedSegmentIndex = 1; // on load, the middle one (#1 in the array) is selected
-                      
+    [self.billAmount addTarget:self action:@selector(calculate) forControlEvents:UIControlEventEditingChanged];
                       NSLog(@"tipArray");
     
     NSLog(@"Hello");
@@ -58,11 +58,8 @@
 - (void) calculate {
     
     float billAmount = [self.billAmount.text floatValue];
-    
     float tipPercent = [self.tipArray[self.tipControl.selectedSegmentIndex] floatValue];
-    
     float tipAmount = billAmount * tipPercent;
-    
     float total = billAmount + tipAmount;
     
     self.tipAmount.text = [NSString stringWithFormat:@"%0.2f", tipAmount]; // 0.2f means 2 decimal place float
@@ -71,6 +68,9 @@
     NSLog(@"%d", self.tipControl.selectedSegmentIndex);
     
     //NSLog(@"%0.2f", billAmount); // f = float; d = integer
+}
+
+- (IBAction)onChange:(id)sender {
 }
 
 @end
