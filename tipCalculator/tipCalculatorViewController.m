@@ -38,7 +38,7 @@
     
     [self.tipControl addTarget:self action:@selector(calculate) forControlEvents:UIControlEventValueChanged];
     self.tipControl.selectedSegmentIndex = 1; // on load, the middle one (#1 in the array) is selected
-    [self.billAmount addTarget:self action:@selector(calculate) forControlEvents:UIControlEventEditingChanged];
+    [self.billAmount addTarget:self action:@selector(calculate) forControlEvents:UIControlEventEditingChanged]; // for automatic updating of the figures
                       NSLog(@"tipArray");
     
     NSLog(@"Hello");
