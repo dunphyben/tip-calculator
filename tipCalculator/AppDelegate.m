@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "tipCalculatorViewController.h"
 
 @implementation AppDelegate
 
@@ -16,6 +17,12 @@
     // Override point for customization after application launch.
     
     
+    tipCalculatorViewController *tipVC = [[tipCalculatorViewController alloc] init];
+    //makes an instance of tipCalculatorViewController
+    
+    UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:tipVC];
+    
+    self.window.rootViewController = nav;
     
     
     
