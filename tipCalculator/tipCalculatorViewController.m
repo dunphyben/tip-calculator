@@ -49,6 +49,10 @@
 }
 
 - (void) calculate {
-    NSLog(@"calculate method is called");
+    
+    float billAmount = [self.billAmount.text floatValue];
+    
+    NSLog(@"%f", billAmount); // f = float; d = integer
 }
+
 @end
