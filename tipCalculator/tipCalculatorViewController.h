@@ -10,5 +10,6 @@
 
 @interface tipCalculatorViewController : UIViewController
 - (IBAction)onTap:(UITapGestureRecognizer *)sender;
+@property (weak, nonatomic) IBOutlet UITextField *billAmount;
 
 @end
