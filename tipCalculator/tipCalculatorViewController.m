@@ -51,8 +51,11 @@
 - (void) calculate {
     
     float billAmount = [self.billAmount.text floatValue];
+    float tipAmount = billAmount * 0.15;
     
-    NSLog(@"%0.2f", billAmount); // f = float; d = integer
+    self.tipAmount.text = [NSString stringWithFormat:@"%f", tipAmount];
+    
+    //NSLog(@"%0.2f", billAmount); // f = float; d = integer
 }
 
 @end
