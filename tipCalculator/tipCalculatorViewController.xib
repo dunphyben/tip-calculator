@@ -8,6 +8,7 @@
             <connections>
                 <outlet property="billAmount" destination="pSZ-lT-AVn" id="vCd-kn-r3q"/>
                 <outlet property="tipAmount" destination="0wW-EW-xAb" id="v2S-54-kCO"/>
+                <outlet property="tipControl" destination="tGC-O3-Uw7" id="VHz-RD-xeG"/>
                 <outlet property="total" destination="5tX-Bh-Lgr" id="H1w-FH-3ZY"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>

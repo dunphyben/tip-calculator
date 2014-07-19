@@ -16,4 +16,6 @@
 @property (weak, nonatomic) IBOutlet UILabel *tipAmount;
 @property (weak, nonatomic) IBOutlet UILabel *total;
 
+@property (weak, nonatomic) IBOutlet UISegmentedControl *tipControl;
+
 @end
